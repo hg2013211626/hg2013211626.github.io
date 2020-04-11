@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Maven打包项目的三种方式 | Hexo</title>
-  <meta name="keywords" content=" Spring , 代码规范 ">
+  <meta name="keywords" content=" Spring , maven ">
   <meta name="description" content="Maven打包项目的三种方式 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
@@ -153,6 +153,10 @@
         <a class="color5">代码规范</a>
     </li>
     
+    <li class="article-tag-list-item">
+        <a class="color1">maven</a>
+    </li>
+    
     <div class="clearfix"></div>
 </div>
 
@@ -177,7 +181,7 @@
         
         <a  class="Spring学习 "
            href="/2020/04/11/Maven%E6%89%93%E5%8C%85%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E5%BC%8F/"
-           data-tag="Spring,代码规范"
+           data-tag="Spring,maven"
            data-author="" >
             <span class="post-title" title="Maven打包项目的三种方式">Maven打包项目的三种方式</span>
             <span class="post-date" title="2020-04-11 10:01:20">2020/04/11</span>
@@ -214,14 +218,14 @@
             
             <a class="color2">Spring</a>
             
-            <a class="color5">代码规范</a>
+            <a class="color1">maven</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-11 10:11:21'>2020-04-11 10:01</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-11 10:14:06'>2020-04-11 10:01</time>
         
     </div>
     <div class="article-meta">
@@ -261,8 +265,9 @@
       
         <p>最近在学习Spring的相关内容，学习spring-boot之后，记录一下三种启动方式</p>
 <h2 id="方法一：利用idea启动"><a href="#方法一：利用idea启动" class="headerlink" title="方法一：利用idea启动"></a>方法一：利用idea启动</h2><p> 直接利用idea启动，然后在浏览器输入<a href="http://localhost:8080/项目名" target="_blank" rel="noopener">http://localhost:8080/项目名</a></p>
-<h2 id="方法二：maven启动"><a href="#方法二：maven启动" class="headerlink" title="方法二：maven启动"></a>方法二：maven启动</h2><p>1.打开项目所在的目录 \<br>2.使用命令  mvn spring-boot:run \<br>3.启动完成</p>
-<h2 id="方法三：放在服务器上运行，一般采用这种方式启动"><a href="#方法三：放在服务器上运行，一般采用这种方式启动" class="headerlink" title="方法三：放在服务器上运行，一般采用这种方式启动"></a>方法三：放在服务器上运行，一般采用这种方式启动</h2><p> 1.使用mvn目录打包： mvn clean package \<br> 2.使用java目录启动：java -jar XXX.jar<br> 3.启动完成</p>
+<h2 id="方法二：maven启动"><a href="#方法二：maven启动" class="headerlink" title="方法二：maven启动"></a>方法二：maven启动</h2><p>1.打开项目所在的目录 <br>2.使用命令  mvn spring-boot:run <br>3.启动完成</p>
+<h2 id="方法三：放在服务器上运行，一般采用这种方式启动"><a href="#方法三：放在服务器上运行，一般采用这种方式启动" class="headerlink" title="方法三：放在服务器上运行，一般采用这种方式启动"></a>方法三：放在服务器上运行，一般采用这种方式启动</h2><p> 1.使用mvn目录打包： mvn clean package <br> 2.使用java目录启动：java -jar XXX.jar<br> 3.启动完成</p>
+<p> 顺便记录一下 git 提交博客的目录： git d -g</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -276,7 +281,7 @@
     
     <p><span class="copy-title">本文作者:</span><a  title="Gen Huang">Gen Huang</a></p>
     <p><span class="copy-title">发布时间:</span>2020-04-11, 10:01:20</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-11, 10:11:21</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-11, 10:14:06</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/11/Maven%E6%89%93%E5%8C%85%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E5%BC%8F/" title="Maven打包项目的三种方式">http://yoursite.com/2020/04/11/Maven%E6%89%93%E5%8C%85%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E5%BC%8F/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -321,7 +326,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#生活随机','#Spring','#代码规范',],
+            'data': ['#生活随机','#Spring','#代码规范','#maven',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
